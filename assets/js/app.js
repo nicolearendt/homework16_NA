@@ -1,5 +1,5 @@
 var svgWidth = 960;
-var svgHeight = 500;
+var svgHeight = 600;
 
 var margin = {
   top: 20,
@@ -33,9 +33,9 @@ d3.csv("assets/data/data.csv").then(function(bigData, err) {
   bigData.forEach(function(data) {
     data.poverty = +data.poverty;
     data.healthcare = +data.healthcare;
-    data.age = +data.age; //need to change to median
+    data.age = +data.age; //median
     data.smokes = +data.smokes;
-    data.income = +data.income; //need to change to median
+    data.income = +data.income; //median
     data.obesity = +data.obesity;
   });
 
